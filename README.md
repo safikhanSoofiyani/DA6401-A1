@@ -6,7 +6,10 @@ In this work, we developed a feed forward neural network from scratch. We have u
 2. Keras: This library is used to obtain the dataset.
 3. Matplotlib and Seaborn: Sample images from each class and Confusion Matrix are plotted using these libraries respetively
 4. sklearn: The dataset is split into Train-Test-Validation by this library
-5. wandb: This library is used to log the metrics to wandb.ai.
+5. wandb: This library is used to log the metrics to wandb.ai.\
+
+## WandB Report Link
+https://wandb.ai/safikhan/DA6401_Assignment_1/reports/DA6401-Assignment-1--VmlldzoxMTcxNzgwOQ
 # Installations:
 The above mentioned libraries can be installed on local machine by using the following code snippet in the command prompt:
 ```python
