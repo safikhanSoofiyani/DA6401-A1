@@ -51,16 +51,16 @@ def parse_args():
     parser.add_argument("--wandb_project", type=str, default="da6401_assignment", help="Weights and Biases project name")
     parser.add_argument("--wandb_entity", type=str, default="safikhan", help="Weights and Biases entity name")
     parser.add_argument("--dataset", type=str, default="fashion_mnist", help="Dataset to be used for training")
-    parser.add_argument("--num_hidden_layers", type=int, default=2, help="Number of hidden layers in the model")
-    parser.add_argument("--num_neurons", type=int, default=32, help="Number of neurons in each hidden layer")
+    parser.add_argument("--num_hidden_layers", type=int, default=5, help="Number of hidden layers in the model")
+    parser.add_argument("--num_neurons", type=int, default=128, help="Number of neurons in each hidden layer")
     parser.add_argument("--learning_rate", type=float, default=0.0001, help="Learning rate for the model")
-    parser.add_argument("--init_type", type=str, default="random", help="Initialization type for the model")
-    parser.add_argument("--activation", type=str, default="sigmoid", help="Activation function for the model")
+    parser.add_argument("--init_type", type=str, default="xavier", help="Initialization type for the model")
+    parser.add_argument("--activation", type=str, default="relu", help="Activation function for the model")
     parser.add_argument("--loss", type=str, default="cross_entropy", help="Loss function for the model")
     parser.add_argument("--batch_size", type=int, default=32, help="Batch size for the model")
-    parser.add_argument("--epochs", type=int, default=5, help="Number of epochs for the model")
-    parser.add_argument("--lambd", type=float, default=0, help="Regularization parameter for the model")
-    parser.add_argument("--optimizer", type=str, default="rmsprop", help="Optimizer function for the model")
+    parser.add_argument("--epochs", type=int, default=20, help="Number of epochs for the model")
+    parser.add_argument("--lambd", type=float, default=0.0005, help="Regularization parameter for the model")
+    parser.add_argument("--optimizer", type=str, default="nadam", help="Optimizer function for the model")
     parser.add_argument("--test", type=str, default="False", help="Test the model")
     return parser.parse_args()
 
@@ -112,4 +112,3 @@ def main():
     
 if __name__ == "__main__":
     main()
-    
