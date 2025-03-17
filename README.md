@@ -10,6 +10,8 @@ In this work, we developed a feed-forward neural network from scratch. We have u
 
 ## WandB Report Link
 https://wandb.ai/safikhan/DA6401_Assignment_1/reports/DA6401-Assignment-1--VmlldzoxMTcxNzgwOQ
+## Github Repo Link
+https://github.com/safikhanSoofiyani/DA6401-A1/
 # Installations:
 The above mentioned libraries can be installed on local machine by using the following code snippet in the command prompt:
 ```python
